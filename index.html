@@ -16,8 +16,10 @@
           theme: {
             extend: {
               colors: {
+                'gradient-start': '#FF8938',
+                'gradient-end': '#F00',
                 clifford: '#da373d',
-                'gradient': 'var(--Linear, linear-gradient(270deg, #F00 0%, #FF8938 100%))',
+                
               }
             }
           }
@@ -34,8 +36,8 @@
 </head>
 <body class="font-manrope">
   <header class="container mx-auto">
-    <div class="hero min-h-screen ">
-      <div class="hero-content flex-col lg:flex-row">
+    <div class=" my-20 ">
+      <div class="flex justify-between items-center flex-col lg:flex-row">
         <div>
           <h1 class="text-7xl font-extrabold">It's good <br>
             tea time at The <br> Tea House</h1>
@@ -43,7 +45,7 @@
           <button class="btn text-xl text-white font-bold bg-gradient-to-r from-[#FF8938] to-[#F00]">Explore More <img src="images/arrow.png" alt=""></button>
         </div>
         <div>
-          <img src="images/banner.png" class="max-w-sm" />
+          <img src="images/banner.png"/>
           <div class=" -mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
             <i class="fa-solid fa-star text-3xl text-amber-400"></i>
             <div>
@@ -158,8 +160,56 @@
       </div>
     </section>
   </main>
-  <footer>
-
-  </footer>
+  <footer class="bg-base-200 px-48 py-10">
+    <div class="flex justify-between my-20">
+      <img src="images/cup.png" alt="">
+      <p>
+        <span>Ready to get started?</span>
+        <button class="btn text-xl text-white font-bold bg-gradient-to-r from-[#FF8938] to-[#F00]">Get Started 
+        </button>
+      </p>
+    </div>
+    <div class="footer text-base-content">
+      <nav>
+        <header class="footer-title">Services</header> 
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Company</header> 
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav> 
+      <nav>
+        <header class="footer-title">Legal</header> 
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav> 
+      <form>
+        <header class="footer-title">Newsletter</header> 
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label> 
+          <div class="join">
+            <input type="text" placeholder="username@site.com" class=" py-4 bg-transparent border-b-2 border-black" /> 
+            <button class="btn text-white rounded-full bg-gradient-to-r from-gradient-start to-gradient-end border-none">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="footer footer-center p-4 bg-base-200 text-base-content">
+      <aside>
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+      </aside>
+    </div>
+  </footer>  
 </body>
 </html>
